@@ -49,7 +49,7 @@ async function initMap() {
   if (!mapContainer.value) return
 
   if (navigator.geolocation) {
-    emit('permission-enabled', true)
+    // emit('permission-enabled', true)
     mapInstance = L.map(mapContainer.value).setView([-6.1754, 106.8246], 15)
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -71,7 +71,7 @@ async function initMap() {
       }
     },
     (error) => {
-      emit('permission-enabled', false)
+    //   emit('permission-enabled', false)
       toast.warning('Anda harus aktifkan lokasi di browser Anda.')
       console.error('Error mendapatkan posisi user:', error)
     })

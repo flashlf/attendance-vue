@@ -265,7 +265,6 @@ async function doCheckOut() {
           :area="true"
           :calculate="true"
           @distance-computed="onDistanceComputed"
-          @permission-enabled="locationIsEnabled"
           :key="refLocId"
         />
         <Map

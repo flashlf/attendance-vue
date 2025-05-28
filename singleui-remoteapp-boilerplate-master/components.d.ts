@@ -8,6 +8,7 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    AttendanceDonut: typeof import('./src/components/AttendanceDonut.vue')['default']
     BlockCode: typeof import('./src/components/BlockCode.vue')['default']
     Button: typeof import('./src/components/ui/button/Button.vue')['default']
     Card: typeof import('./src/components/ui/card/Card.vue')['default']
@@ -29,6 +30,7 @@ declare module 'vue' {
     DialogTitle: typeof import('./src/components/ui/dialog/DialogTitle.vue')['default']
     DialogTrigger: typeof import('./src/components/ui/dialog/DialogTrigger.vue')['default']
     Input: typeof import('./src/components/ui/input/Input.vue')['default']
+    LeaveQuota: typeof import('./src/components/LeaveQuota.vue')['default']
     Map: typeof import('./src/components/ui/map/Map.vue')['default']
     ModalView: typeof import('./src/components/modals/ModalView.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']

@@ -2,18 +2,22 @@
 import { Toaster } from '@/components/ui/sonner'
 import 'vue-sonner/style.css'
 import Example from "@/views/Example.vue"
+import AttendanceDonut from "@/views/DashboardView.vue"
 </script>
 
 <template id="app">
 
     <!-- <Example></Example> -->
      <nav>
-        <router-link to="/">Home</router-link> |
+        <router-link to="/">Example</router-link> |
+        <router-link to="/dashboard">Dashboard</router-link> |
         <router-link to="/attendance/form">Absen</router-link> |
         <router-link to="/attendance/confirmation">Konfirmasi Absen</router-link> |
         <router-link to="/attendance/card">Kartu Absensi</router-link>
+
     </nav>
     <router-view />
+    <!-- <AttendanceDonut class="bg-[#81bb93] rounded-xl shadow-md"></AttendanceDonut> -->
     <Toaster
         position="bottom-right"
         :visibleToasts="5"
